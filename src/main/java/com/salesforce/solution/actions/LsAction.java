@@ -15,7 +15,7 @@ public class LsAction implements Action {
   }
 
   private void search(File f){
-    for (final File file : f.listFiles()) {
+    for (File file : f.listFiles()) {
       if (file.isDirectory()) {
         System.out.println(file.getName());
         if(isRecursive)
